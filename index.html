@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Curso PWA</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <!--Configuracion PWA-->
+    <meta name="theme-color" content="#e92667"/>
+
+    <!--Optimización para movil-->
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+
+    <!--Optimizacion para Apple-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="apple-touch-icon" href="img/favicon.png"/>
+    <link rel="apple-touch-startup-image" href="img/favicon.png">
+    
+    <!--Configuracion del manifiesto-->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+
+    <!--FIN Configuracion PWA-->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container nav">
+            <div id="logo">
+                <h1>Carlos Calzada Web</h1>
+            </div>
+            <div id="menu">
+                <ul class="wrapper-nav">
+                    <li><a href="#main-header">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#videos">Video</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="clearfix"></div>
+
+    <div id="slider">
+        <div class="container wrapper-slider">
+            <h2>Desarrollador web</h2>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h2 class="subheader">Servicios</h2>
+            <div class="wrapper-services">
+                <div class="service">
+                    <img src="img/1.png">
+                    <h3>Desarrollo web</h3>
+                    <p>
+                        Ofrezco servicios de desarrollo web moderno con las mejores tecnologílas y plataformas web
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="img/2.png">
+                    <h3>Diseño web</h3>
+                    <p>
+                        Diseño de sitios y aplicaciones web moderno, limpio y atractivo para tus clientes
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="img/3.png">
+                    <h3>Mentoria</h3>
+                    <p>
+                        Puedo ser tu mentor o profesor para enseñarte desarrollo y programación web moderna
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="videos">
+        <div class="container">
+            <h2 class="subheader">Videos</h2>
+            <div class="wrapper-videos">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/0IevF22iGZw" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>
+                        💚SpotLists Top 50 Hits, the playlist with the best songs of the moment.
+                    </p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/hG62_VntuO8" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>
+                        💙SpotLists Top 50 Future, the best collection of future bass, future house and electronic sounds.
+                    </p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/lVDtnDr0bOE" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>
+                        🖤SpotLists Top 50 Remix, the playlist with the best remix of the moment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <div class="container">
+            <h2 class="subheader h2-footer">Contacto</h2>
+            <p>Enviame un mensaje en cualquiera de estas redes sociales :)</p>
+            <ul class="wrapper-social">
+                <li class="social">
+                    <a href="">
+                        <img src="img/twitter.png">
+                    </a>
+                </li class="social">
+                <li>
+                    <a href="">
+                        <img src="img/facebook.png">
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="">
+                        <img src="img/instagram.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

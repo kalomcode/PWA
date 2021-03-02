@@ -1,0 +1,308 @@
+/*ESTILOS GENERALES*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Open Sans', Verdana;
+}
+
+body {
+    background: white;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.container{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0px auto;;
+}
+
+.subheader{
+    font-size: 34px;
+    color:#333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(233, 38, 103);
+}
+
+/*CABECERA*/
+header{
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 100px;
+}
+
+.nav{
+    padding: 10px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    color:rgb(233, 38, 103);
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.wrapper-nav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    height: 100%;
+}
+
+.wrapper-nav li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    
+}
+.wrapper-nav li a{
+    margin: 0px auto;
+    font-family: 'Open Sans', Verdana;
+    color:black;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+.wrapper-nav li a:hover{
+    color:rgb(233, 38, 103);
+}
+
+/*SLIDER*/
+#slider{
+    height: 200px;
+    background:rgb(233, 38, 103);
+    box-shadow: 0px 0px 14px rgb(68, 68, 68) inset;
+}
+
+.wrapper-slider{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-slider h2{
+    font-size: 40px;
+    color: white;
+    text-shadow: -2px 2px 8px rgb(63, 63, 63);
+}
+
+/*SERVICIOS*/
+.wrapper-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.service{
+    padding: 20px;
+    margin: 7%;
+    box-shadow: 0px 5px 4px gray,0px 3px 8px gray;;
+}
+
+.service img{
+    height: 55px;
+    padding: 10px;
+}
+
+.service h3{
+    padding: 5px;
+}
+
+.service p{
+    padding: 5px;
+}
+
+/*VIDEOS*/
+.video{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.wrapper-videos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.video p{
+    color: #555;
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+.video iframe{
+    width: 100%;
+    height: 200px;
+}
+
+/*PIE DE PAGINA*/
+footer{
+    background: #333;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.h2-footer{
+    padding-top: 30px;
+    color: white;
+}
+
+.wrapper-social{
+    width: 30%;
+    margin: 0px auto;
+    padding: 30px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.wrapper-social li a{
+    display: block;
+    transition: opacity 300ms;
+}
+
+.wrapper-social li a:hover{
+    opacity: 0.5;
+    transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 870px){
+    .wrapper-nav li{
+        padding: 3px
+    }
+}
+
+@media (max-width: 797px){
+    .container{
+        width: 95%;
+    }
+    .wrapper-nav li{
+        padding: 2px
+    }
+    #logo{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 706px){
+    .container{
+        width: 95%;
+    }
+    .service h3{
+        font-size: 16px;
+    }
+    
+    .service p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 631px){
+    .service p{
+        display: none;
+    }
+    header{
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+    header h1{
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .nav{
+        display: block;
+    }
+    #menu{
+        display: block;
+    }
+    #slider{
+        display: block;
+    }
+    .wrapper-videos{
+        display: block;
+    }
+    .video iframe{
+        width: 80%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 471px){
+    .wrapper-services{
+        display: block;
+    }
+    .service p{
+        display: block;
+    }
+    .service h3{
+        font-size: 22px;
+    }
+    
+    .service p{
+        font-size: 16px;
+    }
+    .video iframe{
+        width: 90%;
+        height: 250px;
+    }
+    footer p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wrapper-social{
+        width: 50%;
+    }
+}
+
+@media (max-width: 390px){
+    #slider h2{
+        font-size: 30px;
+    }
+    #slider{
+        height: 120px;
+    }
+    .video iframe{
+        width: 100%;
+        height: 200px;
+    }
+    .container{
+        width: 100%;
+    }
+    .nav{
+        padding: 0px;
+    }
+    header{
+        padding: 10px;
+    }
+    .wrapper-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .wrapper-social{
+        width: 80%;
+    }
+
+}
